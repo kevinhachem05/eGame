@@ -1,0 +1,155 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Us</title>
+    <style>
+
+        .div1
+        {
+         width: 310px;
+         display:inline-block;
+         position:absolute;
+         left: 1200px;  
+        }
+
+        .div2
+        {
+        width:100px;
+        display:inline-block;
+        }
+
+       .div2_2
+       {
+       text-decoration: none;
+       color: #fff;
+      }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background-color: #c8cae6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #666;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+        }
+
+        section {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        form {
+            margin-top: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #555;
+        }
+
+        footer {
+            background-color: #666;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+        }
+    </style>
+</head>
+<body>
+
+  <div class="div1">
+    <div class="div2">
+    <a href="Games.html" class="div2_2">Games</a>
+    </div>
+    <div class="div2">
+    <a href="About_Us.html" class="div2_2">About Us</a>   
+    </div>
+    <div class="div2">
+    <div style="position:relative ; width:73%; height:2px; background:#fff;margin-bottom:10px;"></div> <!--here we are saying that the blue lign will appear on the top of contact us-->
+    <a href="Contact_Us.html" class="div2_2">Contact Us</a>   
+    </div>
+    </div>
+    <header>
+        <h1>Contact Us</h1>
+    </header>
+
+    <section>
+        <h2>Get in Touch</h2>
+        <p>We would love to hear from you! Fill out the form below to contact us.</p>
+
+        <form id="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" name="subject" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit" onclick="sendEmail()">Send Message</button>
+            <span id="approval"></span>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Dungeon of games.. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function sendEmail() {
+            const Name = document.getElementById("name");
+            const Email = document.getElementById("email");
+            const Text = document.getElementById("subject");
+            const Message = document.getElementById("message");
+            const Approval = document.getElementById("approval");
+
+            if (Name.value === "" || Email.value === "" || Text.value === "" || Message.value === "") {
+            Approval.innerText = "Please fill in all fields.";
+            } else {
+            Approval.innerText = "Please enter a valid email address.";
+            };
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,389 @@
+.div1
+ {
+  border:solid 0px black;
+  width: 310px;
+  display:inline-block;
+  position:absolute;
+  left: 1200px;  
+  margin-top:-8px;
+ }
+
+ .div2
+ {
+  border:solid 0px black;
+  width:100px;
+  display:inline-block;
+ }
+
+.div2_2
+{
+    text-decoration: none;
+    color: black;
+}
+
+ .separator 
+{
+    position: relative;
+    width: 100%;
+    height: 1px;
+    margin-bottom: 0;
+    background: #c4c4c4;
+    border-bottom: 1px solid #fff;
+}
+
+
+.separator2
+{
+    position: relative;
+    display: inline-block;
+    top: 8px;
+    left: 0;
+    width: 2px;
+    height: 35px;
+    background: #c4c4c4;
+    border-right: 1px solid #eaeaea;
+}
+.nav1
+{
+position: relative;
+display: block;
+background: #eee;
+overflow-x:hidden;
+overflow-y:hidden;
+white-space: nowrap;
+
+height:50px;
+width:100%;
+}
+
+.icons
+{
+position:relative;
+width:106px;
+height:50px;
+display:inline-block;
+}
+
+
+.imageNav
+{
+display: block;
+height: 50%;
+
+margin: auto;
+}
+
+
+.spanNav
+{
+display: inline-block;
+position: relative;
+width: 100%;
+color: #575757;
+text-align: center;
+}
+
+.buttonNav
+{
+    position: sticky;
+    display:inline-block;
+    right:0px;
+    width: 40px;
+    height: 40px;
+    border: 0;
+    z-index:1;
+    margin: 5px 3px 0 10px;
+    cursor: pointer;
+}
+
+.buttonNav2
+{
+    position: sticky;
+    display:none;
+    width: 40px;
+    height: 40px;
+    right:1450px;
+    border: 0;
+    z-index:1;
+    margin: 5px 3px 0 10px;
+    cursor: pointer;
+}
+
+.hidden
+{
+	display: none;
+}
+.carousel
+
+{
+    position: relative;
+    overflow: hidden;
+    height: 300px;
+    border-top: 0;
+    background: linear-gradient(#f6f6f6 30%,#e8e8e8 50%,#ddd);
+    /*border-top: 1px solid #c4c4c4;
+    background: #f6f6f6;*/
+    
+}
+
+.carousel:before {
+    display: block;
+    content: " ";
+    position: absolute;
+    z-index: 5;
+    width: 100%;
+    height: 280px;
+    pointer-events: none;
+    background-image: url(images-games/16-carousel.png);
+    background-size: 100% 300px;
+}
+
+.slideLeft
+{
+    width: 275px;
+    height: 280px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    display: inline-block;
+}
+
+.slideLeftContent
+{
+    width: 1700px;
+    transform: translateX(-1200px); /*this css let us choose which image we want it to appear in the concerned div */
+   /* transition: transform 500ms cubic-bezier(0.55, 0, 0.1, 1) 0s; */
+}
+
+.slideCentre
+{
+    position: absolute;
+    display: inline-block;
+    z-index: 4;
+    left: 290px; /*292*/
+    width: 925px; /*938*/
+    height: 280px;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+}
+
+.slideCentreContent
+{
+    width: 1668px;
+    /*transform: translateX(0px);
+    transition: transform 500ms cubic-bezier(0.55, 0, 0.1, 1) 0s;*/
+}
+
+.slideRight
+{
+    width: 271px;
+    height: 280px;
+    position:absolute;
+    left: 1232px; /*1246*/
+    display: inline-block;
+    overflow: hidden;
+
+}
+
+.slideRightContent
+{
+    width: 1668px;
+    transform: translateX(-755px);
+    /*transition: transform 500ms cubic-bezier(0.55, 0, 0.1, 1) 0s; */
+}
+
+.carouselPreviousLeft
+{
+    position: absolute;
+    z-index: 5;
+    top: 123px;
+    left: 254px;
+    width: 59px;
+    height: 59px;
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+    background: url(images-games/20-arrow-left.png) no-repeat 0 0;
+}
+
+.carouselNextRight
+{
+    position: absolute;
+    z-index: 5;
+    top: 123px;
+    width: 59px;
+    height: 59px;
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+    left: 1198px; /*1210*/
+    background: url(images-games/21-arrow-right.png) no-repeat 0 0;
+}
+
+.elt1
+{
+	padding: 0px; 
+	border-top: solid 2px gray; 
+	border-bottom: solid 2px gray; 
+	border-right: solid 2px gray; 
+	border-left: none; 
+	height: 27px;
+	border-top-right-radius: 23px;
+	border-bottom-right-radius: 23px;
+    font-size: 20px;
+}
+
+.icon1
+{
+	height: 40px;
+	border-top: solid 2px gray; 
+	border-bottom: solid 2px gray; 
+	border-left: solid 2px gray; 
+	border-right: none; 
+	border-top-left-radius: 23px;
+	border-bottom-left-radius: 23px;
+	display: inline;
+}
+
+.div3
+{
+    border:none;
+    display:block;
+    color: #333333;
+    font-weight:bolder;
+    font-size: 20px;
+}
+
+.div4
+{
+    border:none;
+    display:none;
+    background-color: silver;
+    padding: 10px;
+    width:670px;
+    height:550px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+
+
+.div5
+{
+    display:block;
+    font-size: 25px;
+    margin:10px; 
+    font-weight:530;
+}
+
+.div6
+{
+    display: inline-block;
+    background-color: white;
+    margin:10px;
+    border-radius: 10px;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    text-decoration: none;
+
+}
+
+.imgDiv
+{
+    width:200px;
+    height:130px;
+    
+}
+
+.div7
+{
+    display: block;
+    font-size: 20px;
+    color:black;
+    
+}
+
+.div8
+{
+    display: block;
+    font-size:15px;
+    color: #575757;
+}
+
+.stars
+{
+    width:80px;
+    height: 30px;
+}
+
+.mostPopular
+{
+    border:none;
+    position: absolute;
+    right: 0px;
+    display:inline-block;
+    background-color: silver;
+    padding: 10px;
+    width:500px;
+    height:550px;
+    overflow: hidden; 
+    border-radius: 10px;
+}
+
+.mostPopular2
+{
+    border:none;
+    position: absolute;
+    right: 0px;
+    display:none;
+    background-color: silver;
+    padding: 10px;
+    width:500px;
+    height:550px;
+    overflow: hidden; 
+    border-radius: 10px;
+}
+
+.div9
+{
+    border:none;
+    display:block;
+    background-color: white;
+    margin:17px;
+    border-radius: 10px;
+    width: 470px;
+    height: 150px;
+    overflow: hidden;
+}
+
+.imageMP
+{
+    width:200px;
+    height: 150px;
+    display: inline-block;
+}
+
+.div10
+{
+    position: absolute;
+    display:inline-block;
+    font-size: 30px;
+    text-decoration: none;
+    color: black;
+}
+
+.stars2
+{
+    width:100px;
+    height: 20px;;
+}
+
+.div11{
+    position:absolute;
+    font-weight: bold;
+    right: 20px;
+    top:1200px;
+    width:190px;
+}
